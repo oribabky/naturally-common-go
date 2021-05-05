@@ -18,7 +18,7 @@ type Waterfall struct {
 	InfoUrl             string
 }
 
-func toDomain(self Waterfall) domain.Waterfall {
+func ToDomain(self Waterfall) domain.Waterfall {
 	waterfall := domain.NewWaterfall(
 		uuid.MustParse(self.Id),
 		self.Name,
